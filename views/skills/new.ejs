@@ -7,11 +7,12 @@
 	<title>Index of my Skills</title>
 </head>
 <body>
-	
+
 	<a href="/skills">&lt; Back</a>
 	<h2><%= title %></h2>
 	<form action="/skills" method="POST">
-		<input type="text" name="skill" placeholder="new skill">
+		<input type="text" name="name" placeholder="new skill">
+		<input type="text" name="level" placeholder="level">
 		<button type="submit">Save Skill</button>
 	</form>
 
