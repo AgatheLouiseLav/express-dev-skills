@@ -7,18 +7,13 @@
 	<title>Index of my Skills</title>
 </head>
 <body>
-	<h1>Welcome to my Tech Skills</h1>
-	<ul>
-		<% skills.forEach(function(skill) { %>
-			<li>
-        		<a href="/skills/<%= skill.id %>"><%= skill.name %></a>
-				-
-				<%= skill.level %>
-      		</li>
-		<% }); %>
-  </ul>
-
-  <a href="/skills/new">Add Skill</a>
 	
+	<a href="/skills">&lt; Back</a>
+	<h2><%= title %></h2>
+	<form action="/skills" method="POST">
+		<input type="text" name="skill" placeholder="new skill">
+		<button type="submit">Save Skill</button>
+	</form>
+
 </body>
 </html>
