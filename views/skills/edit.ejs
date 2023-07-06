@@ -11,7 +11,19 @@
 		<h2><%= title %></h2>
 	<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
 		<input type="text" name="name" placeholder="new skill" value="<%= skill.name %>">
-		<input type="text" name="level" placeholder="level" value="<%= skill.level %>">
+		<select name="level" value="<%= skill.level %>">
+  			<option >locked</option>
+  			<option >in progress</option>
+  			<option >unlocked</option>
+		</select>
+		<select name="comfort" value="<%= skill.comfort %>">
+  			<option >★★★★★</option>
+  			<option >★★★★</option>
+  			<option >★★★</option>
+			<option >★★</option>
+  			<option >★</option>
+			<option >none</option>
+		</select>
 		<button type="submit">Save Skill</button>
 	</form>
 </body>

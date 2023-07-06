@@ -4,7 +4,7 @@ const skills = [
 	{id: 3, name: 'JavaScript' , level: 'unlocked', done: true , comfort: '★★★★'},
 	{id: 4, name: 'Node.js' , level: 'unlocked', done: true , comfort: '★★★★'},
 	{id: 5, name: 'Express' , level: 'in progress', done: true , comfort: '★★★★'},
-	{id: 6, name: 'MongoDB' , level: 'locked', done: false , comfort: 'None'},
+	{id: 6, name: 'MongoDB' , level: 'locked', done: false , comfort: ''},
 	{id: 7, name: 'React' , level: 'locked', done: false , comfort: '★★'}
 ];
 
@@ -31,6 +31,9 @@ function deleteSkill(id) {
 function create(skill) {
 	skill.id = Date.now() % 100000;
 	skill.done = false;
+	//skill.level = " ";
+	//skill.comfort = " ";
+	console.log(skill);
   	skills.push(skill);
 };
 

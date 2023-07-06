@@ -29,7 +29,7 @@ function deleteSkill(req, res) {
 };
 
 function create(req,res) {
-	console.log(req.body);
+	//console.log(req.body);
 	Skills.create(req.body);
 	res.redirect('/skills');
 };
